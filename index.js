@@ -3,7 +3,7 @@ require("dotenv").config();
 
 let app = express();
 
-const customerRoutes = require("./controller-layer/customer");
+const customerRoutes = require("./controller-layer/customers");
 
 async function main(){
     app.use("/customers", customerRoutes);
